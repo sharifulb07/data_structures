@@ -295,3 +295,37 @@
 
 // var result=filterItems(fruits,'an');
 // console.log(result);
+
+// array find or findIndex
+
+// var nums=[5,4,6,7,8,9,10];
+// var result=nums.find((name)=>name>9);
+// console.log(result);
+
+// var inventory=[
+//     {name:'mango', quantity:200},
+//     {name:'cherries',quantity:5},
+//     {name:'tomatoes',quantity:54}
+// ];
+// // declare specific fruit check
+
+// var result=inventory.find(({name})=>name==='tomatoes');
+// console.log(result);
+
+// function isCherries(fruit){
+//     return fruit.name='tomatoes';
+// }
+
+// console.log(inventory.find(isCherries));
+
+function isPrime(elem,index,arr){
+    var start=2;
+    while(start<=Math.sqrt(elem)){
+        if(elem%start++<1){
+            return false;
+        }
+    }
+    return elem >1;
+}
+
+console.log([5,4,34,2,1,6,9].find(isPrime));
